@@ -8,6 +8,8 @@
 }
 .banner-image{
   /* border: 1px solid black; */
+  position: absolute;
+  top: 10%;
   width: 45%;
   height: auto;
 }
@@ -40,31 +42,64 @@ img{
   text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
-  height: 2rem;
+  height: 3rem;
   overflow: hidden;
   /* border: 1px solid black; */
+  
 }
 .skillset h5{
-  animation: loop 5s linear infinite;
+  animation: skillsetLoop 5s linear infinite;
   color: var(--secondary-base-color);
 }
-@keyframes loop{
+@keyframes skillsetLoop{
   0%{
     transform: translateY(0px);
   }
   25%{
-     transform: translateY(-50px);
+     transform: translateY(-80px);
   }
   50%{
-     transform: translateY(-100px);
+     transform: translateY(-160px);
   }
   75%{
-     transform: translateY(-150px);
+     transform: translateY(-240px);
   }
   100%{
-    transform: translateY(-200px);
+    transform: translateY(-320px);
   }
 }
+
+.skillset-icons{
+  margin: 1rem 0;
+  display: flex;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+.skill-icon{
+  height: 3.5rem;
+  width: auto;
+  animation: skillIconLoop 5s linear infinite;
+  
+}
+
+@keyframes skillIconLoop{
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+     transform: translateX(-80px);
+  }
+  50%{
+     transform: translateX(-160px);
+  }
+  75%{
+     transform: translateX(-240px);
+  }
+  100%{
+    transform: translateX(-320px);
+  }
+}
+
 .button-wrapper{
   margin-top: 2rem;
   text-align: center;
