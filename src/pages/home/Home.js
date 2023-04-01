@@ -1,14 +1,20 @@
 import React from 'react'
-import banner from '../../img/main-banner.png'
 
+import Banner from '../../sections/banner/Banner'
 
 function Home() {
 
   return (
     <div className='home'>
+      {/* Banner section */}
       <div className="banner-container">
-        <img src={banner} alt="site banner" />
+        <Banner/>
       </div>
+      
+      {/* Services section */}
+      {/* Technical Stack information section */}
+      {/* Projects section */}
+      {/* Contact section */}
     </div>
   )
 }
