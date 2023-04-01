@@ -3,6 +3,8 @@ import "./banner.css";
 
 import banner from "../../img/main-banner.png";
 
+import CustomButton from "../../utils/button/CustomButton";
+
 function Banner() {
   return (
     <div className="banner-container">
@@ -22,6 +24,7 @@ function Banner() {
           <h5>MySQL</h5>
         </div>
       </div>
+      <CustomButton title="Resume" />
     </div>
   );
 }
