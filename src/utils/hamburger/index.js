@@ -1,20 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import './hamburger.css'
 
-function Hamburger() {
-  const [active, setActive] = useState(false);
+import Dropdown from '../../components/dropdown/Dropdown';
 
-  const handleOnClick = () => {    
-      setActive(!active)    
-  }
+function Hamburger({isActive, clickHandler}) { 
 
   return (
-    <div className='icon' onClick={handleOnClick}>
+    <div className='icon' onClick={clickHandler}>
       {
-        active?(<i className="fa-sharp fa-solid fa-bars fa-2xl"></i>):(<i className="fa-solid fa-xmark fa-2xl"></i>)
-      }
-      
+        !isActive?(<i className="fa-sharp fa-solid fa-bars fa-2xl"></i>):(<i className="fa-solid fa-xmark fa-2xl"></i>)
+      }        
     </div>
   )
 }

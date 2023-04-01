@@ -1,20 +1,24 @@
 .navbar{
-  height: 5rem;
+  height: 4rem;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background: linear-gradient(to bottom, var(--secondary-base-color), transparent); */
+  background: transparent;
+  box-shadow: 1px 1px 5px var(--secondary-base-color);
 }
-.site-logo{
+.site-logo-container{
   margin-left: 9%;
+}
+.site-logo{  
   max-width: 3rem;
   height: auto;
 }
 .site-logo:hover{
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
 
 .navbar .menu-list{
@@ -31,7 +35,7 @@
   width: 2.7rem;
   /* background-color: red; */
   border-radius: 5px;
-  box-shadow: 1px 1px 5px grey;
+  /* box-shadow: 1px 1px 5px grey; */
 }
 .hamburder:hover{
   cursor: pointer;
@@ -61,7 +65,7 @@
   }
 }
 @media screen and (max-width: 550px){
-  .site-logo{
+  .site-logo-container{
     margin-left: 3%;
   }
   .navbar .menu-list{
