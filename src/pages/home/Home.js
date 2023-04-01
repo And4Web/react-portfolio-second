@@ -1,8 +1,15 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+
+import Dropdown from '../../components/dropdown/Dropdown'
 
 function Home() {
+  const dropdownIsActive = useSelector(store=>store.dropdownIsActive)
+  console.log("home.js: ", dropdownIsActive);
   return (
-    <div>Home</div>
+    <div>
+      {dropdownIsActive && <Dropdown/>}
+    </div>
   )
 }
 
