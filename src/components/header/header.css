@@ -9,9 +9,12 @@
 }
 .site-logo{
   margin-left: 9%;
+  max-width: 3rem;
+  height: auto;
 }
-.site-logo{
+.site-logo:hover{
   cursor: pointer;
+  
 }
 
 .navbar .menu-list{

@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom';
 import React from 'react'
 
 import './header.css';
+import siteLogoImage from '../../img/www.png'
 
 import Hamburger from '../../utils/hamburger';
 
@@ -9,7 +10,7 @@ function Header() {
   return (
     <div>
       <nav className='navbar'>
-        <img src="" alt="site logo" className="site-logo" />
+        <img src={siteLogoImage} alt="site logo" className="site-logo" />
         <ul className="menu-list">
           <li className="list-item"><Link to="/services"><span>Services</span> </Link></li>
           <li className="list-item"><Link to="/skills"><span>Skills</span> </Link></li>
