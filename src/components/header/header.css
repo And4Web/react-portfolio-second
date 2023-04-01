@@ -68,6 +68,11 @@
 
 
 /*Media Queries*/
+@media screen and (max-width: 990px){
+  .site-logo-text{
+    display: none;
+  }
+}
 @media screen and (max-width: 800px){
   .list-item span{
     font-size: large;    
