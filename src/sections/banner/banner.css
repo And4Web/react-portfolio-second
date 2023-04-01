@@ -48,8 +48,9 @@ img{
   
 }
 .skillset h5{
-  animation: skillsetLoop 5s linear infinite;
+  animation: skillsetLoop 8s linear infinite;
   color: var(--secondary-base-color);
+  
 }
 @keyframes skillsetLoop{
   0%{
@@ -78,22 +79,40 @@ img{
 .skill-icon{
   height: 3.5rem;
   width: auto;
-  animation: skillIconLoop 5s linear infinite;
-  
+  animation: skillIconLoop 8s linear infinite;
+  margin-left: 1rem;
 }
 
 @keyframes skillIconLoop{
   0%{
-    transform: translateX(0px);
+    transform: translateX(320px);
   }
-  25%{
-     transform: translateX(-80px);
+  10%{
+    transform: translateX(256px);
+  }
+  20%{
+    transform: translateX(192px);
+  }
+  30%{
+    transform: translateX(128px);
+  }
+  40%{
+    transform: translateX(64px);
   }
   50%{
-     transform: translateX(-160px);
+    transform: translateX(0px);
   }
-  75%{
-     transform: translateX(-240px);
+  60%{
+    transform: translateX(-64px);
+  }
+  70%{
+    transform: translateX(-128px);
+  }
+  80%{
+    transform: translateX(-192px);
+  }
+  90%{
+    transform: translateX(-256px);
   }
   100%{
     transform: translateX(-320px);

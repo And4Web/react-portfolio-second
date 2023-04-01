@@ -19,17 +19,15 @@ function Banner() {
       </div>
       <div className="banner-intro">
         <h1 className="banner-title">
-          <span>Full Stack</span> Developer
+          <span>Full Stack</span> Development
         </h1>
         <div className="line"></div>
         <div className="skillset">
-          <h5>Javascript</h5>
-          <h5>Node.js</h5>
-          <h5>React.js</h5>
-          <h5>Next.js</h5>
-          <h5>React Native</h5>
-          <h5>MongoDB</h5>
-          <h5>MySQL</h5>
+          <h5>Frontend Development</h5>
+          <h5>Backend Development</h5>
+          <h5>Hybrid/serverless Applications</h5>
+          <h5>Database Management</h5>
+          <h5>Cross Platform Mobile Apps</h5>
         </div>
         <div className="skillset-icons">
           <img src={js} alt="Javascript" className="skill-icon"/>

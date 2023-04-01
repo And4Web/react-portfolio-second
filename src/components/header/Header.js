@@ -26,6 +26,7 @@ function Header() {
           <Link to="/">
             <img src={siteLogoImage} alt="site logo" className="site-logo"/>
           </Link>
+          <p className="site-logo-text">And4Web</p>
         </div>
         <ul className="menu-list">
           <li className="list-item">
