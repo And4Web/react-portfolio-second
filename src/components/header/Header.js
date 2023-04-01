@@ -1,17 +1,24 @@
 import {Link} from 'react-router-dom';
 import React from 'react'
 
+import './header.css';
+
+import Hamburger from '../../utils/hamburger';
+
 function Header() {
   return (
     <div>
       <nav className='navbar'>
         <img src="" alt="site logo" className="site-logo" />
         <ul className="menu-list">
-          <li className="list-item"><Link to="/services">Services</Link></li>
-          <li className="list-item"><Link to="/skills">Skills</Link></li>
-          <li className="list-item"><Link to="/projects">Projects</Link></li>
-          <li className="list-item"><Link to="/contact">Contact</Link></li>
+          <li className="list-item"><Link to="/services"><span>Services</span> </Link></li>
+          <li className="list-item"><Link to="/skills"><span>Skills</span> </Link></li>
+          <li className="list-item"><Link to="/projects"><span>Projects</span> </Link></li>
+          <li className="list-item"><Link to="/contact"><span>Contact</span> </Link></li>
         </ul>
+        <div className="hamburder">
+          <Hamburger/>
+        </div>
       </nav>
     </div>
   )
