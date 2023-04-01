@@ -1,14 +1,12 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 
-import Dropdown from '../../components/dropdown/Dropdown'
 
 function Home() {
-  const dropdownIsActive = useSelector(store=>store.dropdownIsActive);
 
   return (
-    <div>
-      {dropdownIsActive && <Dropdown/>}
+    <div className='home'>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolores sequi deserunt temporibus illo amet beatae quidem nesciunt nisi voluptates sapiente, ex similique, expedita exercitationem! Natus accusamus cupiditate quo, illo est repellendus recusandae totam. Quam porro consequuntur ullam, hic asperiores illo. Laboriosam placeat nesciunt corrupti a quae culpa, ab voluptatem.</p>
     </div>
   )
 }

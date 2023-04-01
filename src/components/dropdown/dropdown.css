@@ -1,14 +1,18 @@
 .dropdown{
+  position: absolute;
+  top: 4.5rem;
+  left: 1rem;
+  right: 1rem;
   padding: 1rem;
-  max-width: 75%;
+  width: 90%;
   height: auto;
   margin: auto;
-  background: transparent;
+  background: rgba(150, 144, 147, 0.9);
   display: none;
   border-radius: 5px;
-  border: 1px solid rgb(103, 100, 100);  
-  box-shadow: 1px 1px 5px var(--secondary-base-color);
-  
+  /* border: 1px solid rgb(193, 193, 193);   */
+  box-shadow: 1px 1px 5px var(--secondary-base-color), inset 1px 1px 2px rgb(112, 110, 110);
+  z-index: 20;
 }
 .dropdown ul{
   display: flex;

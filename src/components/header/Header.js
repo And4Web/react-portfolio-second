@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 
 import "./header.css";
 import siteLogoImage from "../../img/site-logo.png";
 
 import Hamburger from "../../utils/hamburger";
+import Dropdown from '../../components/dropdown/Dropdown'
 
 function Header() {
   const dispatch = useDispatch();
+  const dropdownIsActive = useSelector(store=>store.dropdownIsActive);
 
   const [active, setActive] = useState(false);
 
@@ -50,6 +52,7 @@ function Header() {
         <div className="hamburder">
           <Hamburger clickHandler={handleOnClick} isActive={active} />
         </div>
+        {dropdownIsActive && <Dropdown/>}
       </nav>
     </div>
   );
