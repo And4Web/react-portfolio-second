@@ -20,8 +20,11 @@ img{
 .banner-intro{
   /* border: 1px solid black; */
   width: 50%;
-  height: 75vh;
+  height: auto;
   margin: auto;
+  position: absolute;
+  top: 10%;
+  right: 5%;
 }
 .banner-title{
   font-size: 4rem;
@@ -62,7 +65,12 @@ img{
     transform: translateY(-200px);
   }
 }
-
+.button-wrapper{
+  margin-top: 2rem;
+  text-align: center;
+  /* border: 1px solid black; */
+  display: block;
+}
 
 @media screen and (max-width: 800px){
   .banner-container{
@@ -78,6 +86,12 @@ img{
   .banner-intro{
     position: absolute;
     top: 10%;
+    width: 95%;
+    margin: auto;
+  }
+  .button-wrapper{
+    position: absolute;
+    top: 140%;
     width: 95%;
     margin: auto;
   }

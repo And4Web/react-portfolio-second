@@ -23,8 +23,11 @@ function Banner() {
           <h5>MongoDB</h5>
           <h5>MySQL</h5>
         </div>
+      <div className="button-wrapper">
+        <CustomButton title="Resume" />
+        <CustomButton title="Contact" />
       </div>
-      <CustomButton title="Resume" />
+      </div>
     </div>
   );
 }
