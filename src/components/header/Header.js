@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import {useDispatch} from 'react-redux';
 
 import "./header.css";
 import siteLogoImage from "../../img/site-logo.png";
@@ -7,10 +8,13 @@ import siteLogoImage from "../../img/site-logo.png";
 import Hamburger from "../../utils/hamburger";
 
 function Header() {
+  const dispatch = useDispatch();
+
   const [active, setActive] = useState(false);
 
   const handleOnClick = () => {
     setActive(!active);
+    dispatch({type: "TOGGLE-BUTTON", isActive: active})
   };
 
   return (

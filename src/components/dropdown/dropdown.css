@@ -1,0 +1,25 @@
+.dropdown{
+  padding: 1rem;
+  max-width: 75%;
+  height: auto;
+  margin: auto;
+  background: transparent;
+  display: none;
+  border-radius: 5px;
+  border: 1px solid rgb(103, 100, 100);  
+  box-shadow: 1px 1px 5px var(--secondary-base-color);
+  
+}
+.dropdown ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 550px){
+  .dropdown{
+    display: block;
+  }
+}

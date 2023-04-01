@@ -1,9 +1,17 @@
 const initialState = {
-  dropdownIsActive: true,
+  dropdownIsActive: false,
 }
 
 const reducer = (state=initialState, action) => {
-  return state;
+  switch(action.type){
+    case "TOGGLE-BUTTON":
+      return {
+        ...state,
+        dropdownIsActive: !state.dropdownIsActive
+      };
+    default:
+      return state;    
+  }
 }
 
 export default reducer;

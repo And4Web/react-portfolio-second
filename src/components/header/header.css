@@ -43,9 +43,15 @@
 
 .list-item{
   list-style-type: none;
-  margin-right: 2rem;
+  margin: 1rem 2rem;
  
 }
+.list-item span{
+  color: var(--dark-1-color);
+  font-size: x-large;
+  
+}
+
 .list-item span:hover{
   color: var(--dark-1-color);
   border-bottom: 2px solid var(--secondary-base-color);
@@ -54,15 +60,18 @@
 
 /*Media Queries*/
 @media screen and (max-width: 800px){
-  
-}
-@media screen and (max-width: 680px){
+  .list-item span{
+    font-size: large;    
+  }
   .navbar .menu-list{
     margin-right: 3%;
   }
+}
+@media screen and (max-width: 680px){  
   .list-item{
     margin-right: 1rem;
-  }
+  } 
+  
 }
 @media screen and (max-width: 550px){
   .site-logo-container{

@@ -2,8 +2,6 @@ import React from 'react'
 
 import './hamburger.css'
 
-import Dropdown from '../../components/dropdown/Dropdown';
-
 function Hamburger({isActive, clickHandler}) { 
 
   return (
