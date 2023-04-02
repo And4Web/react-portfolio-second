@@ -1,15 +1,17 @@
 import React from 'react'
 
 import './services.css'
+import Card from '../../components/card/Card'
 
 function Services() {
   return (
-    <section className='services'>
-      <div className="card">
-        <div className="card-title"></div>
-        <div className="card-desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione voluptatibus deserunt, incidunt reiciendis in omnis magnam laborum quas unde. Magni sunt minima libero, pariatur quo nobis totam quod eligendi?</p>
-         </div>        
+    <section className='services' >
+      <h1>Services</h1>
+      <div className="card-container" style={{display: "flex"}}>
+      <Card title="Frontend Development" desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also." mainSkill="React.js" icon="react"/>
+      <Card/>
+      <Card/>
+      <Card/>
       </div>
     </section>
   )
