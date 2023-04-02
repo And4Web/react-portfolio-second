@@ -3,6 +3,11 @@ import React from "react";
 import "./services.css";
 import Card from "../../components/card/Card";
 
+import react from "../../img/react.png";
+import node2 from '../../img/node2.png';
+import db from '../../img/db.png';
+import mobile from '../../img/mobile.png';
+
 function Services() {
   return (
     <section className="services">
@@ -13,11 +18,17 @@ function Services() {
           title="Frontend Development"
           desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
           mainSkill="React.js"
-          icon="react"
+          icon={react}
         />
-        <Card />
-        <Card />
-        <Card />
+        <Card  title="Backend Development"
+          desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
+          mainSkill="Node.js" icon={node2}/>
+        <Card  title="Database Management"
+          desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
+          mainSkill="MongoDB" icon={db} />
+        <Card  title="Cross Platform mobile Apps"
+          desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
+          mainSkill="React Native" icon={mobile}/>
       </div>
     </section>
   );

@@ -7,12 +7,15 @@
 .section-title{
   text-align: center;
   font-size: 4rem;
+  
 }
 .card-container{
   display: flex;
   flex-wrap: wrap;
   width: 98%;
   margin: auto;
+  margin-top: 2rem;
+
 }
 
 

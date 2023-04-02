@@ -1,13 +1,42 @@
 .card{
-  margin: 1rem;
+  margin: 1.5rem 1rem;
   padding: .5rem;
   height: 25rem;
   width: 15rem;
   border: 1px solid black;
   box-shadow: 1px 1px 5px grey;
   border-radius: 5px;
+  position: relative;
 }
+.card-icon{
+  height: 4rem;
+  width: 4rem;
+  /* border: 1px solid white; */
+  background-color: var(--primary-base-color);
+  box-shadow: 1px 1px 5px grey, inset 1px 1px 2px grey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -8%;
+  left: 35%;
+  overflow: hidden;
 
+}
+.card-icon img{
+  height: 2.8rem;
+  width: auto;
+}
+.card-content{
+  position: absolute;
+  top: 15%;
+}
+.card-desc{
+  margin: 1rem 0;
+}
+.skills{
+  margin: 1rem 0;
+}
 
 /*Media Queries*/
 @media screen and (max-width: 800px){}
@@ -19,6 +48,9 @@
     border: 1px solid black;
     box-shadow: 1px 1px 5px grey;
     border-radius: 5px;
+  }
+  .card-icon{
+    left: 41%;
   }
   
 }
