@@ -41,7 +41,7 @@ img{
 .skillset{
   text-align: center;
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   height: 3rem;
   overflow: hidden;
   /* border: 1px solid black; */
@@ -54,24 +54,18 @@ img{
 }
 @keyframes skillsetLoop{
   0%{
-    transform: translateY(0px);
-  }
-  25%{
-     transform: translateY(-80px);
-  }
+    transform: translateY(300px);
+  }   
   50%{
-     transform: translateY(-160px);
-  }
-  75%{
-     transform: translateY(-240px);
-  }
+     transform: translateY(0px);
+  }  
   100%{
-    transform: translateY(-320px);
+    transform: translateY(-300px);
   }
 }
 
 .skillset-icons{
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: flex;
   overflow: hidden;
   /* border: 1px solid black; */
@@ -85,37 +79,13 @@ img{
 
 @keyframes skillIconLoop{
   0%{
-    transform: translateX(320px);
-  }
-  10%{
-    transform: translateX(256px);
-  }
-  20%{
-    transform: translateX(192px);
-  }
-  30%{
-    transform: translateX(128px);
-  }
-  40%{
-    transform: translateX(64px);
-  }
+    transform: translateX(570px);
+  }  
   50%{
     transform: translateX(0px);
-  }
-  60%{
-    transform: translateX(-64px);
-  }
-  70%{
-    transform: translateX(-128px);
-  }
-  80%{
-    transform: translateX(-192px);
-  }
-  90%{
-    transform: translateX(-256px);
-  }
+  }  
   100%{
-    transform: translateX(-320px);
+    transform: translateX(-570px);
   }
 }
 
@@ -149,23 +119,26 @@ img{
     width: 95%;
     margin: auto;
   }
+  .skillset-icons{
+    margin: 3rem 0;
+  }
   
 }
 @media screen and (max-width: 680px){
   .banner-title{
-  font-size: 3rem;
+  font-size: 3.5rem;
   }
   .skillset{
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 550px){ 
   .banner-title{
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   }
 }
 @media screen and (max-width: 480px){
   .banner-title{
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   }
 }
