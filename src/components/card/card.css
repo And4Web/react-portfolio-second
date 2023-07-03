@@ -2,9 +2,10 @@
   margin: 1.5rem 1rem;
   padding: .5rem;
   height: 25rem;
-  width: 15rem;
-  border: 1px solid black;
-  box-shadow: 1px 1px 5px grey;
+  width: 20rem;
+  /* border: 1px solid black; */
+  border-bottom: 3px solid black;
+  box-shadow: 1px 1px 3px grey;
   border-radius: 5px;
   position: relative;
 }
@@ -45,9 +46,10 @@
     margin: 1.2rem;
     padding: .8rem;
     width: 90%;
-    border: 1px solid black;
-    box-shadow: 1px 1px 5px grey;
-    border-radius: 5px;
+    /* border: 1px solid black; */
+    border-bottom: 3px solid black;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 10px;
   }
   .card-icon{
     left: 45%;
