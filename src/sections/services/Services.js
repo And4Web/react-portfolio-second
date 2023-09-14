@@ -3,9 +3,9 @@ import React from "react";
 import "./services.css";
 import Card from "../../components/card/Card";
 
-import react from "../../img/react.png";
-import node2 from '../../img/node2.png';
-import db from '../../img/db.png';
+import frontend from "../../img/frontend.png";
+import backend from '../../img/backend.png';
+import database from '../../img/database.png';
 import mobile from '../../img/mobile.png';
 
 function Services() {
@@ -18,14 +18,14 @@ function Services() {
           title="Frontend Development"
           desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
           mainSkill="React.js"
-          icon={react}
+          icon={frontend}
         />
         <Card  title="Backend Development"
           desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
-          mainSkill="Node.js" icon={node2}/>
+          mainSkill="Node.js" icon={backend}/>
         <Card  title="Database Management"
           desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
-          mainSkill="MongoDB" icon={db} />
+          mainSkill="MongoDB" icon={database} />
         <Card  title="Cross Platform mobile Apps"
           desc="User friendly and mobile responsive modern frontend for your application, that is not only beautiful but super efficient, SEO friendly also."
           mainSkill="React Native" icon={mobile}/>
